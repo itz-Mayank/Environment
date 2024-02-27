@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn{
+            padding: 8px 35px;
+            border: 2px solid black;
+            border-radius: 50px;
+            cursor: pointer;
+            background-color: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <div class="main" id="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>contact us</li>
+            <li>Email</li>
+        </ul>
+    </div>
+
+    
+    <div id="container">
+        <h1>This is the notification page</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid natus perspiciatis atque. Itaque dolor deleniti illum distinctio omnis dignissimos quis molestias voluptates nulla, cumque id ipsum repudiandae, perspiciatis est fugiat ex. Autem id earum iste illum quidem nulla ipsum. Minima dolore, ullam nulla ut laborum aspernatur odit, nihil voluptate, voluptas architecto veritatis esse repellendus unde hic magnam perspiciatis provident iste. Voluptatum, deserunt doloribus aliquid dolorum at optio veritatis, ipsum laboriosam, saepe vitae officia quasi ullam? Provident numquam odit recusandae delectus corporis nam deserunt iusto quia molestias eaque. Quod odio aliquid dolores mollitia magni deleniti non? Quia aut dicta fugiat delectus consequuntur repellendus similique molestiae corporis distinctio quasi optio velit eius ipsa qui error dolore mollitia amet, aspernatur possimus animi cumque libero! Hic officiis molestias amet placeat odit impedit ipsa distinctio sapiente maxime cupiditate. Eveniet assumenda, impedit laboriosam non fugiat facilis accusantium labore voluptas sapiente similique nulla voluptatibus nesciunt corrupti in natus tempore dicta nemo placeat voluptate iste officia atque nisi, libero omnis. Deleniti laboriosam veritatis adipisci iusto architecto voluptate repudiandae similique quae natus ut perferendis exercitationem rerum, asperiores, soluta odio eos qui hic in esse inventore voluptates voluptas quo nostrum accusantium. Adipisci maiores aperiam maxime vel, molestias nihil officiis quia delectus non perspiciatis error, voluptatibus esse at dicta ipsam. Minus soluta rem, quibusdam porro fugit illum expedita quo sunt autem iusto officiis aliquam laudantium architecto dolores qui obcaecati ea debitis recusandae harum quisquam incidunt! Neque necessitatibus deserunt officiis ea saepe exercitationem porro sint! At sint aut quia, quisquam incidunt, consequatur accusantium error neque dolorum libero reiciendis eveniet aperiam delectus enim dolores repellendus ut fugiat rem optio aspernatur obcaecati veniam? Odio earum incidunt distinctio aliquam mollitia praesentium laborum similique, vero, magnam, facere suscipit neque esse labore aspernatur nisi magni illo! Suscipit iusto sint voluptatem consectetur delectus laborum odit aut pariatur iste.</p>
+    </div>
+    <button id="btn" onclick="toggleHide()">Page up/Page down</button>
+</body>
+<script>
+   // alert 
+    alert("Are you sure to enter in this page")
+
+    let name = prompt("what is your name?", "mayank");
+    console.log(name);//to get response of the given question
+
+    let goBack = confirm("are you sure to go back!!");
+    // console.log(goBack);
+    if(goBack){
+        console.log("post has been deleted");
+    }
+    else{
+        console.log("post is not been deleted");
+    }
+
+    //For an age restricted person
+    let age = prompt("What is your age ?","Write your age here" );
+    if (age>=18){
+        console.log("Welcome to our web !!")
+    }
+    else if (age=="Write your age here"){
+        console.log("Pehli fursat me bahar nikal")
+    }
+    else{
+        console.log("You are not allowed to enter in our website !!")
+    }
+
+    // for loops 
+    let num = [0,1,2,3,4,5];
+    for(index=0;index<=5;index++){
+    console.log(index);
+    }
+    for (element of num){
+        console.log("this is number --:" , + element);
+    };
+
+    let employee ={
+        name : "mayank",
+        business : "Developer",
+        work : "coading"
+    }
+    for(key in employee){
+        console.log(`the ${key} of that man is ${employee[key]}`)
+    }
+
+    //while loops--
+    // let i=0;
+    // while(1<4){
+    //     console.log(`${i} is less than 4`);
+    //     i++;
+    // }
+
+    // do while loops
+    // let i=0;
+    // while(1<4){
+    //     console.log(`${i} is less than 4`);
+    //     i++;
+    // }
+
+    let main = document.getElementsByClassName('main');
+    console.log(main);
+
+    let container = document.getElementById('container');
+    console.log(container);
+
+    let nav = document.getElementById('nav');
+    console.log(nav);
+
+    let sel = document.querySelector('#container');
+    console.log("selector returns", sel);
+
+    let sele = document.querySelectorAll('#nav>li');
+    console.log("selector returns", sele);
+
+
+
+
+</script>
+<script>
+function toggleHide(){
+    let btn = document.getElementById('btn');
+    let para = document.getElementById('para');
+    if(para.style.display != 'none'){
+        para.style.display = 'none';
+    }
+    else{
+        para.style.display = 'block';
+    }
+
+}
+
+
+
+let btn = document.getElementById('btn')
+btn.addEventListener("mouseover" , function run(){
+alert('are you sure to move in');
+});
+
+btn = document.getElementById('btn')
+btn.addEventListener("mouseout" , function run(){
+alert('are you sure to move in');
+});
+</script>
+</html>

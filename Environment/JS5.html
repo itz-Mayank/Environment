@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor hide or show</title>
+</head>
+    <style>
+        #btn{
+            padding: 8px 25px;
+            border-radius: 8px;
+            border: 2px solid black;
+            color: rgb(0, 0, 0);
+            background-color: orange;
+            cursor: pointer;
+        }
+    </style>
+<body>
+    <div class="container">
+        Current time<span id="time"></span>
+        <h1>This is the heading of this container</h1>
+        <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore laboriosam rerum quasi est praesentium asperiores tempora culpa libero minus, aliquam neque possimus quos eligendi id unde, cumque temporibus doloribus molestiae? Maxime omnis consectetur facilis dolorem nulla non placeat nemo voluptatibus libero reiciendis consequatur, ad ducimus temporibus mollitia ipsum quibusdam dolorum esse ex perferendis! Dolor sint eaque aliquid consequuntur, est et maxime fugit neque vero qui fugiat possimus, quisquam laudantium id minima praesentium distinctio ratione maiores amet, at ullam voluptate. Aspernatur est quos delectus voluptatum maxime molestiae, quaerat consequuntur ipsum repudiandae necessitatibus facilis minima tenetur magni distinctio aliquid fuga enim, quidem ab ducimus doloremque autem veritatis laudantium nemo. At voluptatum earum alias doloremque atque inventore tempore iusto unde a explicabo, est perferendis dolores sequi eius assumenda ut enim delectus, doloribus iure! Adipisci perferendis vero dolor. Pariatur, non iure recusandae consequatur qui debitis voluptas, corrupti itaque quia sed autem laudantium ab quaerat voluptatibus. Quia tenetur sit alias. Delectus est eligendi nostrum provident ad culpa, dolores deserunt illo magnam aliquam, expedita sint, commodi beatae nemo unde esse incidunt ipsum maxime cum qui? Pariatur excepturi dolorem repellendus omnis ad mollitia facilis saepe velit, nemo, possimus quos, veritatis laboriosam temporibus. Ad ipsa corrupti culpa perspiciatis?</p>
+    </div>  
+    <button id="btn" onclick = "toggleHide()">Read More</button>
+    <script>
+        function toggleHide()
+        {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if(para.style.display != 'none'){
+            para.style.display = 'none'
+            }
+            else{
+            para.style.display = 'block';
+            }
+        }
+        
+
+
+
+        let btn = document.getElementById('btn');
+        btn.addEventListener("mouseover" , function run(){
+            alert('are you sure to click this button');
+        });
+
+
+        btn = document.getElementById('btn');
+        btn.addEventListener("mouseout" , function run(){
+            alert('click on button to go through');
+        });
+    </script>
+
+    <script>
+        function greet(name, byeText){
+            console.log("hey guyzz this is " + name + "" + byeText)
+        }
+        setTimeout(greet, 4000 , "mayank " ,"!welcomes you all!");
+
+let now = new Date();
+console.log(now)
+
+let dt = new Date(1000);
+console.log(dt)
+
+let newData = new Date("2030-10-27");// in which we can include (year, month, date, hours, minute, second, millisecond)
+console.log(newData)
+
+// let yr = newDate.getFullYear();
+// console.log("the year id" ,yr)
+
+let newDate = new Date(3020, 4, 2, 6, 8, 7,39);
+console.log(newDate);
+
+
+let dat = newDate.getDate();
+console.log("the Date is" ,dat);
+
+
+let mon = newDate.getMonth();
+console.log("the Month is" ,mon);
+
+
+let Yrr = newDate.getYear();
+console.log("the year is" ,Yrr);
+
+
+// let dat = newDate.getDate();
+// console.log("the Date is" ,dat);
+
+newDate.setDate(55);
+newDate.setMilliseconds(10000);
+console.log(newDate);
+
+setInterval(updateTime, 1000);
+
+function updateTime(){
+    time.innerHtml = new Date();
+}
+            //--- when we  write (=>)arrow function{let sum =(a,b)=> a*b} then wee don't need to write function
+        function displayTime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time') , innerHTML = 'time';
+        }
+        setInterval(displayTime,10000)
+
+        function greet(){
+            console.log('Hello Guyzz');
+        }
+        greet();
+
+        setTimeout(() => {
+            console.log('Set time out');
+        }, 3000);
+
+        let sum = (a,b)=>{
+            return a+b;
+        };
+
+        //shortcut method
+        let add = (a,b)=>a+b;
+
+        let dev = a =>a/2;
+
+        let mul = (a,b) =>a*b;
+
+
+
+        let obj = {
+            greeting : "Hello World ",
+            names : ["Chat gpt","artificial intillegence","python","java"],
+            write(){
+                this.names.forEach((student)=>{
+                    console.log(this.greeting + "Take a look on "+ student);
+                });
+            }
+        }
+        obj.write();
+    </script>
+</body>
+</html>

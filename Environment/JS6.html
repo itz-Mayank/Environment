@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math object and some hack tools</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is the file of Math object and Hack tools</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam voluptatem totam doloremque ut repellendus. Exercitationem aliquam consequatur quo quasi consectetur, modi recusandae quam tempore facere! Vel fugiat doloribus repudiandae dignissimos minima, tenetur cupiditate. Libero ex atque, quibusdam tempore quae iure dolorum? A est vitae eveniet. Error dicta sint tempore voluptas nostrum rerum praesentium dolorum, veniam reprehenderit reiciendis sequi consequatur quo aut cupiditate quia itaque, temporibus magnam fuga repudiandae perferendis odit modi inventore ullam quas! Distinctio culpa nam quidem, porro sequi dignissimos. Dolore corporis iusto architecto dignissimos officia iure saepe unde aliquam minus quia cum, explicabo ipsa corrupti necessitatibus id expedita.</p>
+        <ul>
+            <li>UP LINK</li>
+            <LI>HACKNET</LI>
+            <LI>HACKMUD</LI>
+            <LI>GRY HACK</LI>
+        </ul>
+    </div>
+</body>
+<script>
+    //Printing the math object
+    let m = Math;
+    console.log(m);
+
+    //printing the object of math by copying of the value
+    console.log("the value of math.E is", Math.E);
+    console.log("the value of math.LN2 is", Math.LN2);
+    console.log("the value of math.LN10 is", Math.LN10);
+    console.log("the value of math.LOG2E is", Math.LOG2E);
+    console.log("the value of math.PI is", Math.PI);
+    console.log("the value of math.SQRT2 is", Math.SQRT2);
+
+    //Printing the tools example releated to the math object
+    let a =(34.23432);
+    let b =(44.544535);
+    console.log("The value of a and b is", Math.round(a),Math.round(b));
+    console.log("The value of a and b is", a,b);
+
+    console.log("The power 3 of value 2 (2^2) is ", Math.pow(2,3));
+    console.log("The power 2 of value 4 (4^2) is ", Math.pow(4,2));
+    console.log("The power 2 of value 5 (5^2) is ", Math.pow(5,2));
+    console.log("The power 2 of value 6 (6^2) is ", Math.pow(6,2));
+    console.log("The power 2 of value 7 (7^2) is ", Math.pow(7,2));
+
+    console.log("The SQRT of 64 is", Math.sqrt(64));
+    console.log("The SQRT of 36 is", Math.sqrt(36));
+    console.log("The SQRT of 1024 is", Math.sqrt(1024));
+    console.log("The SQRT of 122 is", Math.sqrt(122));
+    console.log("The SQRT of 256 is", Math.sqrt(256));
+
+    //Cell and Floor
+    console.log("5.8 rounded up to the nearest number", Math.ceil(5.9));
+    console.log("5.8 rounded down to the nearest number", Math.floor(5.9));
+    
+    //Absolute function
+    console.log("Absolute value of number 5.9 is", Math.abs(5.9));
+    console.log("Absolute value of number -5.9 is", Math.abs(-5.9));
+
+    //trigonometric function
+    console.log("The value of sin(pi) is", Math.sin(Math.PI/2));
+    console.log("The value of sin(pi) is", Math.cos (Math.PI/2));
+    console.log("The value of sin(pi) is", Math.tan(Math.PI/2));
+
+    //min and max function
+    console.log("minimum value from 12,23,34 is", Math.min(12,23,34));
+    console.log("maximum value from 12,23,34 is", Math.max(12,23,34));
+
+    //Generating a random number
+    let r = Math.random();
+
+    // to find Random number B/W a & b we use this formula---: (a,b)= a+(b-a)*math.random();
+    a1 = 1;
+    b1 = 100;
+    let r1_100 = a1+(b1-a1)*Math.random();
+    console.log("The random number before 1 is", r); 
+    console.log("The random number b/w 1-100 is", r1_100); 
+</script>
+</html>

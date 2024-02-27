@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and conditional</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+            <li>Item-8</li>
+            <li>Item-9</li>
+            <li>Item-10</li>
+        </ul>
+    </div>
+    <script>// For value we can use three types of operator which is var, let, const !!!!.......
+    //Examples are following------:
+        var script1 = "This is a string";
+        console.log(script1);
+
+        let a = "this is the new text in which string is included";
+        console.log(a);
+
+        const ab = "This is the text of other one";
+        console.log(ab);
+
+        //Conditionals---:
+        // let age = 10;
+        // if(age>18){
+        //     console.log("you can drink protien");
+        // }
+        // else if(age==10){
+        //     console.log("You are restricted for this type of drink ")
+        // }
+        // else{
+        // console.log("You cannot drink protien")
+        //  }
+6
+        //statements----:
+        //const key = ___!!!!
+        // switch (key) {
+        //     case value:
+                
+        //         break;
+        
+        //     default:
+        //         break;
+        // }
+        const cups = 4
+        switch (cups) {
+            case 4:
+                console.log("the value of cups is 4")
+                break;
+
+            case 25:
+                console.log("the value of cups is 25")
+                break;
+
+            case 50:
+                console.log("the value of cups is 50")
+                break;
+
+            case 75:
+                console.log("the value of cups is 75")
+                break;
+        
+            default:
+                console.log("there is no one which is look from the above")
+                break;
+        }
+        // let names = [1,2,3,4,"mayank",undefined];
+        // let names = new Array(3,2,1,"mayank",undefined);// new is for difining the array
+        let names = new Array(23);
+        console.log(names);
+        names = names.sort();
+        names.push("this is pushed");
+        console.log(names);
+
+
+        let employee = {
+            name : "mayank",
+            message : "hello Guyz..",
+            age : 18,
+            Comment : "Rate this blog from 10",
+        }
+        console.log(employee)
+    </script>
+</body>
+</html>

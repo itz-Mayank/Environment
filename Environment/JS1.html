@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes releated to the Javascript</title>
+    <script>
+        var a = 69;
+        var b = 34;
+        c = a*b;
+        console.log(a*b);
+        //Operator and Operands in Javascript --
+        //operator are the symbol which we use for add,sub,mul,div,sum,etc.
+        //Like --: 3+4, In which "+" is the operator and "3,4" are operands
+        //operands are the value which we use with the operator.
+        //There are two types of operators that are :
+        // 1. Unary operators  and 2. Binary operators
+        // 1. unary operators are those in which we use one operand like(x = -x)
+        // 2. binary operators are those in which we use double operand like (x = x+6)
+        //Example of binary operators ---
+        c = a+b;
+        console.log(a+b);
+        
+        /*Arithmetic operators in action in javascript*/
+        var num1 = 2;
+        var num2 = 8;
+        console.log("The value of num1 + num2 is"+ (num1 + num2));
+        console.log("The value of num1 - num2 is"+ (num1 - num2));
+        console.log("The value of num1 * num2 is"+ (num1 * num2));
+        console.log("The value of num1 / num2 is"+ (num1 / num2));
+        console.log("The value of num1 % num2 is"+ (num1 % num2));
+        console.log("The value of num1 ** num2 is"+ (num1 ** num2));// in this 2 will multiply 9 times by its own like -- 2*1=2,2*2=4,2*4=8..........2*256=512;
+        console.log("The value of num1 ++ is"+ (num1 ++));// in this nothing will print due to the operands are before operators;
+        console.log("The value of ++ num1 is"+ (++ num1));// in this 3 will print , 4 will print when the above increment is also in use;
+        console.log("The value of num1 -- is"+ (num1 -- ));
+        console.log("The value of -- num1 is"+ (-- num1));// not correct answer because of the above operators is in use 
+</script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="">This is Heading</h1>
+        <div id="content"></div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem sunt velit, minima at qui voluptas odio earum facere ea, fugit, reprehenderit quia sint hic natus vitae aspernatur dolor commodi doloremque. Consequatur quibusdam officiis autem facilis hic? Reiciendis porro nostrum repellendus fuga quibusdam et, quidem totam consequatur quas veniam temporibus possimus optio. Sunt nobis veniam ut? Reiciendis architecto animi eum omnis laborum eius nobis dolorum?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore atque sint voluptatum explicabo aspernatur reiciendis voluptates quaerat dignissimos beatae facere iusto culpa suscipit ipsam, facilis ut vel. Quasi, repudiandae facere. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus harum explicabo vero eius. Commodi, quia earum natus possimus culpa non quam, fuga animi dolorem sed ab perferendis officiis consectetur maxime repellendus omnis assumenda asperiores a eos quod ut quaerat molestias quasi. Provident fugiat eaque illo doloribus quam. Aut repellendus blanditiis provident alias numquam veritatis id, quod autem, doloribus nemo, suscipit odio inventore? Ab voluptas magnam molestiae cumque consequatur harum quaerat iure, blanditiis, excepturi impedit sint veniam omnis distinctio quisquam, amet nihil animi neque! Eveniet facere laboriosam possimus consequatur, necessitatibus dignissimos enim nemo! Eius reprehenderit similique amet, nobis quasi dignissimos expedita possimus quas sed quibusdam perferendis aperiam iusto fugit neque quis fugiat necessitatibus, laborum fuga cum eum, nostrum magnam nulla minima? Unde rerum ipsa provident, nam distinctio assumenda voluptates totam possimus corrupti omnis, animi cumque eveniet dignissimos fugit rem.
+                </p>
+            </div>
+    </div>
+    <script>
+    //String and its method
+    var string = "hello guy's this is";// we can also use single colons in the place of double colons but we need to use double colons in the extra word like word"s
+    var name = "mayank";
+    var message = "Alone man"
+    var temp = `${string} ${name} and he is an ${message} need a bestie`;
+    console.log(temp); // we can use temp for a space
+    var len = name.length;
+    console.log(`the length of name is ${len}`);
+    var y = new String('this');// here we use S capital in String because we already have used string small in above code
+    console.log(y);
+    document.getElementById('content').innerHTML = '<h2> This is an inner heading of the HTML</h2>';
+
+    //Occurence or a position counter of any element which is situated in the text......
+    var str = "This is the text";
+    console.log(str);
+    
+    //first position occurence
+    var position = str.indexOf('is');
+    console.log(position);
+
+    //last position occurence
+    var position = str.lastIndexOf('ex');
+    console.log(position);
+
+    //substring from a string
+    var substr = str.slice(0,8);// While we are writing any number in the string we will not use single colon
+    console.log(substr);
+
+    var replaced = str.replace('text','string');
+    console.log(str);
+    console.log(replaced);
+    console.log(str.toUpperCase());
+    console.log(str.toLocaleLowerCase());
+
+    var  newString = str.concat('New String');
+    console.log(newString);// from this the text go continue with no space
+
+    var strWithWhitespaces = "              this is   the space    and trim    remove this space";
+    console.log(strWithWhitespaces)
+    console.log(strWithWhitespaces.trim());// it only removes the space which is at the stsrting and the ending
+    var char3 = str.charAt(5);
+    console.log(char3);// it shows the situated text from the number
+
+    var charcode = str.charCodeAt(2);
+    console.log(charcode);
+    console.log(str[3]);// also use for slicing.......
+    </script>
+</body>
+</html>
